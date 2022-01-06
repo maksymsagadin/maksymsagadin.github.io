@@ -35,7 +35,7 @@ h6 { font-size: 15px; }
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--primaryText);
     font-family: 'Quicksand', sans-serif;
-    margin: 24px 0px 16px;
+    margin: 21px 0px 16px;
     text-align: center;
     /* font-family: 'Titillium Web', sans-serif; */
 }
@@ -48,7 +48,7 @@ p, li, span, label, input, textarea {
 }
 
 div p:last-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
 }
 
 a {
@@ -149,6 +149,13 @@ hr {
     display: inline;
     margin-left: 5px
 }
+#navigation li:hover a {
+    padding: 2px 5px;
+    color: var(--primaryText);
+    background-color: var(--buttonColor);
+    border: 2px solid var(--borderColor);
+    border-radius: 7px;
+}
 
 .left-container {
     grid-area: left-column;
@@ -216,6 +223,7 @@ hr {
 
 #objective-statement {
     width: 300px;
+    height: 121px;
     padding: 15px;
     border: 2px solid var(--introBoxBorderColor);
     background-color: var(--introBoxColor);
@@ -282,7 +290,7 @@ hr {
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: var(--primaryColor);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .project {
@@ -376,9 +384,11 @@ hr {
     #objective-statement-shadow {
         width: 225px;
     }
-    
     #objective-statement {
         width: 225px;
         padding-bottom: 0px;
+    }
+    #expertise-container h4 {
+        margin-top: 0px;
     }
 }
