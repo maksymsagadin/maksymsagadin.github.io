@@ -24,11 +24,12 @@
                     </div>
                     <ul id='navigation'>
                         <li><a target='_blank' href='./files/Maksym_Sagadin_Resume.pdf'>Download CV</a></li>
+                        <li><a href='quiz.html'>Practice Quiz</a></li>
                     </ul>
                 </div>
                 <div class='left-container'>
-                    <img id='hero-image' src='images/hero_image.jpg'>
-                    <h5 style='margin: 30px 0px 15px 0px;'>Designate Theme</h5>
+                    <img id='hero-image' src='images/hero_image.jpg' alt='hero image'>
+                    <h5>Designate Theme</h5>
 
                     <div id="theme-swatch-container">
                         <div data-clicked='light' id='light-theme' class='theme-swatch'></div>
@@ -45,7 +46,7 @@
                             <div id='top-left-corner' class='corner'></div>
                             <div id='top-right-corner' class='corner'></div>
                             <h3 style='margin: 0; text-align: left;'>What I Do</h3>
-                            <p style='margin: 0px; padding-bottom: 28px;'>I am a Web Developer with experience in working with HTML, CSS, JavaScript.</p>
+                            <p style='margin: 0px;'>I am a Web Developer with experience in working with HTML, CSS, JavaScript.</p>
                             <div id='bottom-right-corner' class='corner'></div>
                             <div id='bottom-left-corner' class='corner'></div>
                         </div>
@@ -98,7 +99,7 @@
     </section>
     <section class='style-one'>
         <div class='main-container'>
-            <h3>Past Projects</h3>
+            <h3 style='margin-bottom: 6px;'>Past Projects</h3>
             <div id='projects-container'>
                 <div class='project'>
                     <img class='thumbnail' src='./images/task_tracker.png'>
@@ -142,6 +143,13 @@
         <div class='main-container'>
             <h3 style='margin-bottom: 24px;'>Get In Contact</h3>
             <form id='contact-form' action="https://formsubmit.co/9eb39a04dcd177daa6178cea9b1ccef9" method="POST">
+                <!-- Honeypot -->
+                <input type='text' name='_honey' style='display: none;'>
+                <!-- Disable Captcha -->
+                <input type='hidden' name='_captcha' value='false'>
+                <!-- Success Page -->
+                <input type='hidden' name='_next' value='https://maksymsagadin.github.io/success.html'>
+
                 <input class='input-field' type='text' placeholder='Name' name='name' required>
 
                 <input class='input-field' type='text' placeholder='Subject' name='subject' >
