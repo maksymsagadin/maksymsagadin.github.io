@@ -1,0 +1,22 @@
+:root {
+    --primaryColor: #051b24;
+    --secondaryColor: #051216;
+    
+    --borderColor: #07303f;
+
+    --primaryText: cornsilk;
+    --secondaryText: #e8dbc9;
+
+    --boxColor: #052b3a;
+    --boxShadow: -3px 3px 10px 1px rgba(0,0,0,0.33);
+
+    --introBoxColor: #22819e50;
+    --introBoxBorderColor: #22819e;
+
+    --buttonColor: #052b3a;
+}
+
+a {
+    text-decoration: none;
+    color: #09394b;
+}
