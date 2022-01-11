@@ -3,6 +3,7 @@
     --secondaryColor: #ebf3f2;
 
     --borderColor: #9fb6b3;
+    --borderRadius: 7px;
 
     --primaryText: #2b3130;
     --secondaryText: #191d1c;
@@ -94,7 +95,7 @@ hr {
 #intro-container {
     background-color: var(--secondaryColor);
     border: 2px solid var(--borderColor);
-    border-radius: 7px 7px 0px 0px;
+    border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
     border-bottom: none;
     box-shadow: var(--boxShadow);
 
@@ -110,7 +111,7 @@ hr {
 .navigation-container {
     grid-area: navigation;
     border-bottom: 2px solid var(--borderColor);
-    border-radius: 7px 7px 0px 0px;
+    border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -155,7 +156,7 @@ hr {
     color: var(--primaryText);
     background-color: var(--buttonColor);
     border: 2px solid var(--borderColor);
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
 }
 
 .left-container {
@@ -216,7 +217,7 @@ hr {
 }
 #objective-statement-shadow {
     background-color: var(--boxColor);
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     width: 300px;
     height: 121px;
     padding: 30px 0px 0px 30px;
@@ -281,7 +282,7 @@ hr {
 #expertise {
     display: flex;
     justify-content: space-evenly;
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     background-color: var(--boxColor);
     text-align: center;
 }
@@ -296,7 +297,7 @@ hr {
 
 .project {
     background-color: var(--secondaryColor);
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     box-shadow: var(--boxShadow);
     display: flex;
     flex-direction: column;
@@ -306,7 +307,7 @@ hr {
 
 .thumbnail {
     margin: 20px 20px 0px;
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     height: 200px;
 }
 
@@ -327,7 +328,7 @@ hr {
     display: flex;
     flex-direction: column;
     max-width: 650px;
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     margin: 0px auto 32px;
     padding: 18px;
     background-color: var(--primaryColor);
@@ -342,7 +343,7 @@ hr {
     padding: 7px 15px;
     margin: 9px;
     border: none;
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     background-color: var(--secondaryColor);
     font-size: 14px;
     resize: none;
@@ -353,7 +354,7 @@ hr {
     padding: 10px 0px;
     margin: 9px;
     border: 1px solid var(--borderColor);
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     background-color: var(--buttonColor);
     font-size: 16px;
 }
