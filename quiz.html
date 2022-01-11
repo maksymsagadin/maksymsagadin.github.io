@@ -24,18 +24,19 @@
             </ul>
         </div>
         <div class='main-container '>
-            <div id='quiz-intro'>
+            <div id='quiz-intro' class='quiz-statement'>
                 <h2>Test your Javascript knowledge</h2>
-                <button id='begin'>Begin Quiz</button>
+                <button id='begin' class='button'>Begin Quiz</button>
             </div>
-            <section id='question' class='hidden'>
+            <section id='question-container' class='hidden'>
+                <section id='question'></section>
                 <button id='back' class='button hidden'>Back</button>
                 <button id='next' class='button'>Next</button>
-                <p id='result' class='hidden'></p>
-                <button id='reset' class='button'>Reset</button>
             </section>
         </div>
+        <button id='reset' class='button hidden'>Reset</button>
     </section>
+
     <script type='text/javascript' src='./styling/theme.js'></script>
     <script type='text/javascript' src='./project/jsquestions.js'></script>
     <script type='text/javascript' src='./project/quiz.js'></script>

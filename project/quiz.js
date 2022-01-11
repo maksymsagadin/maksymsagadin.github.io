@@ -1,19 +1,19 @@
 const questions = (data);
 
 let introContainer = document.getElementById('quiz-intro');
-let questionContainer = document.getElementById('question');
+let questionContainer = document.getElementById('question-container');
+let question = document.getElementById('question');
 let beginButton = document.getElementById('begin');
 let nextButton = document.getElementById('next');
 let backButton = document.getElementById('back');
 let resetButton = document.getElementById('reset');
-let result = document.getElementById('result');
 let currentQuestionIndex = 0;
 let answers = [];
 
 
 function renderQuestion(currentQuestionIndex) {
   questionContainer.classList.remove('hidden');
-  questionContainer.innerHTML = `
+  question.innerHTML = `
     <h2>Question ${currentQuestionIndex + 1} of ${questions.length}:</h2>
     <h3>${questions[currentQuestionIndex].questionText}</h3>
     <p id='select-error' class='hidden'>Please select an answer to continue</p>
@@ -30,27 +30,22 @@ function renderQuestion(currentQuestionIndex) {
     `
 }
 
-function removeQuestions() {
-  questionContainer.innerHTML = '<h3>The Results are in!</h3>';
-  backButton.classList.add('hidden');
-  nextButton.classList.add('hidden');
-}
-
 beginButton.addEventListener('click', function() {
   introContainer.classList.add('hidden');
   renderQuestion(currentQuestionIndex);
+  resetButton.classList.remove('hidden');
 })
 
 resetButton.addEventListener('click', function() {
   currentQuestionIndex = 0;
   renderQuestion(currentQuestionIndex);
-  document.querySelector('#question').classList.remove('hidden');
+  introContainer.classList.remove('hidden');
+  questionContainer.classList.add('hidden');
   backButton.classList.add('hidden');
   nextButton.classList.remove('hidden');
   nextButton.textContent = 'Next';
-  result.classList.add('hidden');
-  result.textContent = '';
   answers.length = 0;
+  resetButton.classList.add('hidden');
 });
 
 nextButton.addEventListener('click', function() {
@@ -71,8 +66,7 @@ nextButton.addEventListener('click', function() {
         nextButton.textContent = 'Submit';
     }
     else if (currentQuestionIndex === questions.length) {
-      removeQuestions();
-      calculateResults(); //keeps last question visible after processing results. needs to be updated to remove question.
+      renderResults(calculateResults());
     }
     renderQuestion(currentQuestionIndex);
     radioButtonChecked = false;
@@ -95,7 +89,6 @@ backButton.addEventListener('click', function() {
 });
 
 function calculateResults() {
-  document.querySelector('#question').classList.add('hidden');
   let correctCount = 0;
   for (let correct of answers) {
     if (correct === 'true') {
@@ -103,9 +96,16 @@ function calculateResults() {
     }
   }
   let percent = (correctCount/questions.length*100).toFixed(0);
-  result.textContent = `You got ${percent}% correct : ${correctCount} / ${questions.length}`;
-  result.classList.remove('hidden');
-  nextButton.classList.add('hidden');
+  let result = `You got ${percent}% correct : ${correctCount} / ${questions.length}`;
+  return result;
+}
+
+function renderResults(result) {
+  questionContainer.classList.add('quiz-statement');
+  questionContainer.innerHTML = `
+    <h3>The Results are in!</h3>
+    <p>${result}</p>
+  `;
   backButton.classList.add('hidden');
-  correctCount = 0;
+  nextButton.classList.add('hidden');
 }
