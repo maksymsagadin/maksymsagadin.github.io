@@ -1,6 +1,6 @@
 data = [
     {
-      questionText: 'Which operator returns true if the two compared values are not equal?',
+      questionText: 'Which operator returns true, if the two compared values are not equal?',
       choices: [
         {
           choiceText: '<>',

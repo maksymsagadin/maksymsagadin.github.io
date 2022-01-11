@@ -14,8 +14,8 @@ let answers = [];
 function renderQuestion(currentQuestionIndex) {
   questionContainer.classList.remove('hidden');
   question.innerHTML = `
-    <h5 id='questionCount'>Question ${currentQuestionIndex + 1} of ${questions.length}:</h2>
-    <h5 id='questionText'>${questions[currentQuestionIndex].questionText}</h3>
+    <h5 id='questionCount'>Question ${currentQuestionIndex + 1} of ${questions.length}:</h5>
+    <h5 id='questionText'>${questions[currentQuestionIndex].questionText}</h5>
     <p id='select-error' class='hidden'>Please select an answer to continue</p>
     <form class='questions'>
           <div class='question-container'>
