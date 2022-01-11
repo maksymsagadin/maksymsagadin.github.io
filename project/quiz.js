@@ -14,18 +14,26 @@ let answers = [];
 function renderQuestion(currentQuestionIndex) {
   questionContainer.classList.remove('hidden');
   question.innerHTML = `
-    <h2>Question ${currentQuestionIndex + 1} of ${questions.length}:</h2>
-    <h3>${questions[currentQuestionIndex].questionText}</h3>
+    <h5 id='questionCount'>Question ${currentQuestionIndex + 1} of ${questions.length}:</h2>
+    <h5 id='questionText'>${questions[currentQuestionIndex].questionText}</h3>
     <p id='select-error' class='hidden'>Please select an answer to continue</p>
     <form class='questions'>
-          <input type='radio' value='${questions[currentQuestionIndex].choices[0].correct}' name='choice' id='q1'>
-          <label for='q1'>${questions[currentQuestionIndex].choices[0].choiceText}</label><br>
-          <input type='radio' value='${questions[currentQuestionIndex].choices[1].correct}' name='choice' id='q2'>
-          <label for='q2'>${questions[currentQuestionIndex].choices[1].choiceText}</label><br>
-          <input type='radio' value='${questions[currentQuestionIndex].choices[2].correct}' name='choice' id='q3'>
-          <label for='q3'>${questions[currentQuestionIndex].choices[2].choiceText}</label><br>
-          <input type='radio' value='${questions[currentQuestionIndex].choices[3].correct}' name='choice' id='q4'>
-          <label for='q4'>${questions[currentQuestionIndex].choices[3].choiceText}</label><br>
+          <div class='question-container'>
+            <input type='radio' value='${questions[currentQuestionIndex].choices[0].correct}' name='choice' id='q1'>
+            <label for='q1'>${questions[currentQuestionIndex].choices[0].choiceText}</label>
+          </div>
+          <div class='question-container'>
+            <input type='radio' value='${questions[currentQuestionIndex].choices[1].correct}' name='choice' id='q2'>
+            <label for='q2'>${questions[currentQuestionIndex].choices[1].choiceText}</label>
+          </div>
+          <div class='question-container'>
+            <input type='radio' value='${questions[currentQuestionIndex].choices[2].correct}' name='choice' id='q3'>
+            <label for='q3'>${questions[currentQuestionIndex].choices[2].choiceText}</label>
+          </div>
+          <div class='question-container'>
+            <input type='radio' value='${questions[currentQuestionIndex].choices[3].correct}' name='choice' id='q4'>
+            <label for='q4'>${questions[currentQuestionIndex].choices[3].choiceText}</label>
+          </div>
         </form>
     `
 }
@@ -72,7 +80,7 @@ nextButton.addEventListener('click', function() {
     radioButtonChecked = false;
   }
   else {
-      document.querySelector('.error').classList.remove('hidden');
+      document.querySelector('#select-error').classList.remove('hidden');
     }
 });
 
@@ -104,7 +112,7 @@ function renderResults(result) {
   questionContainer.classList.add('quiz-statement');
   questionContainer.innerHTML = `
     <h3>The Results are in!</h3>
-    <p>${result}</p>
+    <h4>${result}</h4>
   `;
   backButton.classList.add('hidden');
   nextButton.classList.add('hidden');
