@@ -62,6 +62,13 @@ div p:last-of-type {
 a {
     text-decoration: none;
     color: #7a7ce6;
+    padding: 2px 5px;
+    border-radius: var(--borderRadius);
+}
+a:hover {
+    color: var(--primaryText);
+    background-color: var(--buttonColor);
+    border: 2px solid var(--borderColor);
 }
 
 ul {
@@ -157,13 +164,7 @@ hr {
     display: inline;
     margin-left: 5px
 }
-#navigation li:hover a {
-    padding: 2px 5px;
-    color: var(--primaryText);
-    background-color: var(--buttonColor);
-    border: 2px solid var(--borderColor);
-    border-radius: var(--borderRadius);
-}
+
 
 .left-container {
     grid-area: left-column;

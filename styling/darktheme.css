@@ -18,5 +18,5 @@
 
 a {
     text-decoration: none;
-    color: #09394b;
+    color: var(--introBoxBorderColor);
 }
