@@ -178,6 +178,7 @@ hr {
     width: 200px;
     /* object-fit: contain; */
     border: 3px solid var(--borderColor);
+    border-radius: var(--borderRadius);
     box-shadow: var(--boxShadow);
 }
 
@@ -190,6 +191,7 @@ hr {
     height: 30px;
     width: 30px;
     border: 2px solid var(--borderColor);
+    border-radius: var(--borderRadius);
     background-color: blanchedalmond;
     margin-right: 7px;
     cursor: pointer;
