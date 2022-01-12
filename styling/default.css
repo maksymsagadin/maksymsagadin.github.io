@@ -48,15 +48,10 @@ h1, h2, h3, h4, h5, h6, strong {
     text-align: center;
 }
 
-p, li, span, label, input, textarea {
+p, li, span, input, textarea {
     margin: 0px;
     color: var(--secondaryText);
     font-family: var(--basicFont);
-    text-shadow: var(--textShadow);
-}
-
-button {
-    font-family: var(--elegantFont);
     text-shadow: var(--textShadow);
 }
 
@@ -323,14 +318,15 @@ hr {
 }
 
 .project-title {
-    margin-top: 0px;
+    margin: 0px;
 }
 
 .project-info {
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 .project-links {
+    margin: 5px 0px;
     display: flex;
     justify-content: space-between;
 }
