@@ -177,7 +177,7 @@ hr {
     height: 200px;
     width: 200px;
     /* object-fit: contain; */
-    border-radius: 50%;
+    border: 3px solid var(--borderColor);
     box-shadow: var(--boxShadow);
 }
 
@@ -189,7 +189,7 @@ hr {
 .theme-swatch {
     height: 30px;
     width: 30px;
-    border-radius: 50%;
+    border: 2px solid var(--borderColor);
     background-color: blanchedalmond;
     margin-right: 7px;
     cursor: pointer;
