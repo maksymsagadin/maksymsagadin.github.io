@@ -18,7 +18,7 @@
 
     --elegantFont: 'Berkshire Swash', cursive;
     --scriptFont: 'Oleo Script', cursive;
-    --basicFont: 'Lobster Two', cursive;
+    --basicFont: 'Titillium Web', sans-serif;
     --textShadow: -4px 4px 3px rgba(0, 0, 0, 0.12);
 }
 
@@ -401,10 +401,16 @@ hr {
     #objective-statement-shadow {
         width: 225px;
     }
+
     #objective-statement {
         width: 225px;
         padding-bottom: 5px;
     }
+
+    #objective-statement h3 {
+        line-height: 0.9;
+    }
+
     #expertise-container h4 {
         margin-top: 0px;
     }
