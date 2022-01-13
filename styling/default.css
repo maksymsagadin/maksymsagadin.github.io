@@ -235,10 +235,14 @@ hr {
 #objective-statement {
     width: 300px;
     height: 121px;
-    padding: 15px;
+    padding: 10px;
     border: 2px solid var(--introBoxBorderColor);
     background-color: var(--introBoxColor);
     position: relative;
+}
+
+#objective-statement p {
+    margin: 0px;
 }
 
 .corner {
@@ -383,6 +387,7 @@ hr {
         'right-column'
         ;
     }
+
     .right-container {
         justify-content: center;
         margin-bottom: 75px;
@@ -398,7 +403,7 @@ hr {
     }
     #objective-statement {
         width: 225px;
-        padding-bottom: 0px;
+        padding-bottom: 5px;
     }
     #expertise-container h4 {
         margin-top: 0px;
