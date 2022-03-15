@@ -1,20 +1,20 @@
 :root {
-    --primaryColor: #a2ebc2;
-    --secondaryColor: #4d8b68;
+    --primaryColor: #051b24;
+    --secondaryColor: #051216;
 
-    --borderColor: #103d23;
+    --borderColor: #07303f;
     --borderRadius: 7px;
 
-    --primaryText: black;
-    --secondaryText: black;
+    --primaryText: cornsilk;
+    --secondaryText: #e8dbc9;
 
-    --boxColor: #103d23;
+    --boxColor: #052b3a;
     --boxShadow: -3px 3px 10px 1px rgba(0,0,0,0.33);
 
-    --introBoxColor: #a2ebc298;
-    --introBoxBorderColor: #0b2716;
+    --introBoxColor: #22819e50;
+    --introBoxBorderColor: #22819e;
 
-    --buttonColor: #145a32;
+    --buttonColor: #052b3a;
 
     --headerFont: 'Bungee', cursive;
     --basicFont: 'Baloo 2', cursive;
