@@ -1,20 +1,20 @@
 :root {
-    --primaryColor: #d3e6e3;
-    --secondaryColor: #ebf3f2;
+    --primaryColor: #a2ebc2;
+    --secondaryColor: #4d8b68;
 
-    --borderColor: #9fb6b3;
+    --borderColor: #103d23;
     --borderRadius: 7px;
 
-    --primaryText: #2b3130;
-    --secondaryText: #191d1c;
+    --primaryText: black;
+    --secondaryText: black;
 
-    --boxColor: #94bbb6;
+    --boxColor: #103d23;
     --boxShadow: -3px 3px 10px 1px rgba(0,0,0,0.33);
 
-    --introBoxColor:rgba(41, 100, 163, 0.5);
-    --introBoxBorderColor: cyan;
+    --introBoxColor: #a2ebc298;
+    --introBoxBorderColor: #0b2716;
 
-    --buttonColor: #94bbb6;
+    --buttonColor: #145a32;
 
     --headerFont: 'Alfa Slab One', cursive;
     --basicFont: 'Inter', sans-serif;
@@ -60,7 +60,7 @@ div p:last-of-type {
 
 a {
     text-decoration: none;
-    color: #7a7ce6;
+    color: var(--introBoxBorderColor);
     padding: 2px 5px;
     border-radius: var(--borderRadius);
 }
