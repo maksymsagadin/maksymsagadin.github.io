@@ -31,7 +31,7 @@ function applyTheme(theme) {
     let styleSheet = document.querySelector('#theme');
 
     switch (theme) {
-        case 'light':
+        case 'dark':
             styleSheet.href = './styling/default.css';
             break;
         case 'blue':
@@ -40,8 +40,8 @@ function applyTheme(theme) {
         case 'green':
             styleSheet.href = './styling/greentheme.css';
             break;
-        case 'dark':
-            styleSheet.href = './styling/darktheme.css';
+        case 'creme':
+            styleSheet.href = './styling/cremetheme.css';
             break;
     }
     //Update local storage variable

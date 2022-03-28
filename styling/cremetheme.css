@@ -1,19 +1,19 @@
 :root {
-    --primaryColor: #051b24;
-    --secondaryColor: #051216;
+    --primaryColor: #F3F2EE;
+    --secondaryColor: #DEDEDE;
     
     --borderColor: #07303f;
 
-    --primaryText: cornsilk;
-    --secondaryText: #e8dbc9;
+    --primaryText: #646B52;
+    --secondaryText: #626950;
 
-    --boxColor: #052b3a;
+    --boxColor: #AAA8B2;
     --boxShadow: -3px 3px 10px 1px rgba(0,0,0,0.33);
 
     --introBoxColor: #22819e50;
     --introBoxBorderColor: #22819e;
 
-    --buttonColor: #052b3a;
+    --buttonColor: #AAA8B2;
 }
 
 a {

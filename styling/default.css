@@ -202,8 +202,8 @@ hr {
     border: 2px solid var(--borderColor);
 }
 
-#light-theme {
-    background-color: #d9f5f2;
+#creme-theme {
+    background-color: #F3F2EE;
 }
 
 #blue-theme {
@@ -280,6 +280,10 @@ hr {
 
 #about-me {
     margin: 0px 25px;
+    text-align: center;
+}
+#about-me p {
+    padding: 0px 12px;
 }
 
 .social-links {
@@ -289,6 +293,7 @@ hr {
 
 #expertise-container {
     margin: 0px 25px 24px;
+    text-align: center;
 }
 
 #expertise {
@@ -325,10 +330,16 @@ hr {
 
 .project-title {
     margin: 0px;
+    padding: 6px 0;
 }
 
 .project-info {
-    margin: 10px 20px;
+    margin: 10px 20px;    
+}
+
+.project-details {
+    text-align: center;
+    padding: 0px 5px;
 }
 
 .project-links {
@@ -412,5 +423,6 @@ hr {
 
     #expertise-container h4 {
         margin-top: 0px;
+        
     }
 }
